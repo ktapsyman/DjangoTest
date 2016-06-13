@@ -8,3 +8,6 @@
 	2:Run manage.py makemigrations
 
 	3:Run manage.py migrate
+
+https://docs.djangoproject.com/ja/1.9/topics/http/urls/
+http://stackoverflow.com/questions/150505/capturing-url-parameters-in-request-get
