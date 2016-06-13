@@ -1,0 +1,48 @@
+<!--{% load staticfiles %}-->
+<link rel="stylesheet" href="{% static 'Bootstrap/css/bootstrap.min.css' %}">
+<table class="table table-bordered">
+	<tr>
+		<td>123</td>
+		<td>456</td>
+		<td>789</td>
+	</tr>
+	<tr>
+		<td>123</td>
+		<td>456</td>
+		<td>789</td>
+	</tr>
+	<tr>
+		<td>123</td>
+		<td>456</td>
+		<td>789</td>
+	</tr>
+	<tr>
+		<td>123</td>
+		<td>456</td>
+		<td>789</td>
+	</tr>
+	<tr>
+		<td>123</td>
+		<td>456</td>
+		<td>789</td>
+	</tr>
+	<tr>
+		<td>123</td>
+		<td>456</td>
+		<td>789</td>
+	</tr>
+	<tr>
+		<td>123</td>
+		<td>456</td>
+		<td>789</td>
+	</tr>
+</table>
+{% if LatestQList %}
+	<ul>
+	{% for question in LatestQList %}
+		<li>{{question.question_text}}</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No questions in DB</p>
+{% endif %}
